@@ -5,15 +5,41 @@
         <img alt="logo" src="../assets/img/cw-logo.png" height="45" />
       </div>
     </router-link>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto">
         <li>
-          <router-link :to="{ name: 'About' }" class="btn text-success lighten-30 selectable text-uppercase">
+          <router-link
+            :to="{ name: 'About' }"
+            class="btn text-success lighten-30 selectable text-uppercase"
+          >
             About
+          </router-link>
+        </li>
+        <li>
+          <router-link
+            :to="{ name: 'Home' }"
+            class="btn text-success lighten-30 selectable text-uppercase"
+          >
+            Home
+          </router-link>
+        </li>
+        <li>
+          <router-link
+            :to="{ name: 'Job' }"
+            class="btn text-success lighten-30 selectable text-uppercase"
+          >
+            Jobs
           </router-link>
         </li>
       </ul>
@@ -24,13 +50,13 @@
 </template>
 
 <script>
-import Login from './Login.vue';
+import Login from "./Login.vue";
 export default {
   setup() {
-    return {}
+    return {};
   },
-  components: { Login }
-}
+  components: { Login },
+};
 </script>
 
 <style scoped>

@@ -1,4 +1,4 @@
-import { reactive } from 'vue'
+import { reactive } from "vue";
 
 // NOTE AppState is a reactive object to contain app level data
 export const AppState = reactive({
@@ -11,7 +11,9 @@ export const AppState = reactive({
   /** @type {import('./models/Classified.js').Classified[]} */
   classifieds: [],
 
-  /** @type {import('./models/Classified.js').Classified | null} */
-  activeClassified: null
+  /** @type {import('./models/Job.js').Job[]} */
+  jobs: [],
 
-})
+  /** @type {import('./models/Classified.js').Classified | null} */
+  activeClassified: null,
+});
